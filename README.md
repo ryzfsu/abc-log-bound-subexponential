@@ -24,7 +24,7 @@ The Lean 4 formalization of Theorem 1.1 is in [lean/](lean/). The same tree
 is at the root of the [palomar](https://github.com/ryzfsu/abc-log-bound-subexponential/tree/palomar)
 branch. The Palomar registry entry [PALOMAR-2026-11-20-000026](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-20-000026)
 registers the palomar branch commit 7629a771c6f35598f1c56d32a5f13fb521e2ede0, whose Lean files are
-identical to lean/ here. The main declaration, `AbcTwoNinths.twoNinths`, proves this statement:
+identical to lean/ here. The main declaration, `AbcSubexp.subexp`, proves this statement:
 
 ```lean
 theorem subexp :
