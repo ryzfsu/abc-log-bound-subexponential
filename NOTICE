@@ -1,0 +1,11 @@
+A subexponential upper bound for log c in the abc conjecture
+
+Copyright (c) 2026 Ruiyi Zhang. All rights reserved.
+
+This package is released under the Apache License, Version 2.0. The complete
+license text is provided in LICENSE.
+
+The vendored modules come from Ruiyi Zhang's Lean formalization of the
+two-ninths paper (concept DOI 10.5281/zenodo.24405683,
+https://github.com/ryzfsu/abc-log-bound-two-ninths, commit
+e10c67b33dda8d5c97d6f275d9644a3be7438ee2), under Apache 2.0.
