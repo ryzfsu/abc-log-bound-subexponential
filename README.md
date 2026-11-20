@@ -4,6 +4,8 @@ Ruiyi Zhang
 
 DOI: [10.5281/zenodo.24407806](https://doi.org/10.5281/zenodo.24407806)
 
+Lean (Palomar): [PALOMAR-2026-11-20-000026](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-20-000026)
+
 For every $`\varepsilon>0`$, there is a constant $`C_\varepsilon>0`$ such that
 all positive integers $`a,b,c`$ with $`a+b=c`$ and $`\gcd(a,b)=1`$ satisfy
 
@@ -20,7 +22,9 @@ all positive integers $`a,b,c`$ with $`a+b=c`$ and $`\gcd(a,b)=1`$ satisfy
 
 The Lean 4 formalization of Theorem 1.1 is in [lean/](lean/). The same tree
 is at the root of the [palomar](https://github.com/ryzfsu/abc-log-bound-subexponential/tree/palomar)
-branch. The main declaration, `AbcSubexp.subexp`, proves this statement:
+branch. The Palomar registry entry [PALOMAR-2026-11-20-000026](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-20-000026)
+registers the palomar branch commit 7629a771c6f35598f1c56d32a5f13fb521e2ede0, whose Lean files are
+identical to lean/ here. The main declaration, `AbcTwoNinths.twoNinths`, proves this statement:
 
 ```lean
 theorem subexp :
