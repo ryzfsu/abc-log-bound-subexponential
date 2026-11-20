@@ -2,7 +2,7 @@
 
 Ruiyi Zhang
 
-DOI: [DOI pending]
+DOI: [10.5281/zenodo.24407806](https://doi.org/10.5281/zenodo.24407806)
 
 For every $`\varepsilon>0`$, there is a constant $`C_\varepsilon>0`$ such that
 all positive integers $`a,b,c`$ with $`a+b=c`$ and $`\gcd(a,b)=1`$ satisfy
@@ -45,14 +45,16 @@ is licensed under Apache 2.0. See [LICENSE.md](LICENSE.md) for details.
 
 ## Citation
 
-Ruiyi Zhang, *A subexponential upper bound for log c in the abc conjecture*,
-preprint, 2026.
+Ruiyi Zhang, *A subexponential upper bound for log c in the abc conjecture*, preprint, Zenodo, 2026. https://doi.org/10.5281/zenodo.24407806
 
 ```bibtex
 @misc{zhang2026abcsubexponential,
-  author = {Zhang, Ruiyi},
-  title  = {A subexponential upper bound for $\log\, c$ in the {$abc$} conjecture},
-  year   = {2026},
-  note   = {Preprint}
+  author    = {Zhang, Ruiyi},
+  title     = {A subexponential upper bound for $\log\, c$ in the {$abc$} conjecture},
+  year      = {2026},
+  publisher = {Zenodo},
+  note      = {Preprint},
+  doi       = {10.5281/zenodo.24407806},
+  url       = {https://doi.org/10.5281/zenodo.24407806}
 }
 ```

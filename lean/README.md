@@ -93,7 +93,7 @@ compares the inline theorem types and their fixed definitions. The challenge has
 ## Citation
 
 Ruiyi Zhang. [*A subexponential upper bound for log c in the abc conjecture*](https://github.com/ryzfsu/abc-log-bound-subexponential).
-Theorem 1.1. [ORCID](https://orcid.org/0009-0003-3110-8524).
+Preprint, Zenodo, 2026. Theorem 1.1. DOI: [10.5281/zenodo.24407806](https://doi.org/10.5281/zenodo.24407806). [ORCID](https://orcid.org/0009-0003-3110-8524).
 
 ## Use of AI tools
 

@@ -7,7 +7,10 @@ authors:
     affiliation: Independent Researcher
     orcid: "https://orcid.org/0009-0003-3110-8524"
 license: CC-BY-4.0
+doi: 10.5281/zenodo.24407806
+url: "https://doi.org/10.5281/zenodo.24407806"
 repository-code: "https://github.com/ryzfsu/abc-log-bound-subexponential"
+date-released: 2026-11-20
 preferred-citation:
   type: article
   title: "A subexponential upper bound for log c in the abc conjecture"
@@ -17,3 +20,7 @@ preferred-citation:
       affiliation: Independent Researcher
       orcid: "https://orcid.org/0009-0003-3110-8524"
   year: 2026
+  publisher:
+    name: Zenodo
+  doi: 10.5281/zenodo.24407806
+  url: "https://doi.org/10.5281/zenodo.24407806"
