@@ -1,0 +1,28 @@
+\begin{proposition}\label{prop:lucas}
+Evaluation on \(\mathcal B(L_*)\) is injective on the space of rational
+polynomials in \(m\) variables of total degree at most \(D\).
+\end{proposition}
+
+\begin{proof}
+For a multi-index \(a\), write \(|a|=\sum_i a_i\), \(a!=\prod_i a_i!\)
+and \(B_a(Z)=\prod_i\binom{Z_i}{a_i}\).
+The \(B_a\) with \(|a|\le D\) form a rational basis by their leading terms
+\(Z^a/a!\). Their evaluations are integers. Suppose their columns satisfy
+a relation with coefficients \(\xi_a\in\F_q\). For each residue
+\(s\in\{0,\ldots,q-1\}^m\) with \(|s|\le D\), put
+\(j_s=\lfloor(D-|s|)/q\rfloor\) and
+\(F_s=\sum_{|v|\le j_s}\xi_{qv+s}B_v\).
+Here \(j_s\le k<q\), so each \(v!\) is invertible.
+At every node \(qy+r\) with \(|r|\le D\), Lucas's congruence~\cite{Lucas} gives
+\(\sum_{s\le r} B_s(r)F_s(y)=0\), with coordinatewise order.
+Indeed, compare coefficients of \(T^{qv_i+s_i}\) in
+\((1+T)^{qy_i+r_i}\equiv(1+T^q)^{y_i}(1+T)^{r_i}\pmod q\).
+
+Induct on \(|r|\). The terms with \(s\ne r\) vanish by induction,
+and \(B_r(r)=1\). Thus \(F_r\) vanishes on the \(r\)-block.
+Lemma~\ref{lem:block} gives \(F_r=0\) since \(\deg F_r\le j_r\).
+The distinct leading terms \(Y^v/v!\) give \(\xi_{qv+r}=0\) for \(|v|\le j_r\).
+Every column occurs, since the residue of \(a\) has sum at most \(|a|\).
+Full column rank modulo \(q\) gives an integer maximal minor prime to \(q\),
+hence full column rank over \(\Q\).
+\end{proof}

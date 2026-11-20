@@ -1,0 +1,54 @@
+\section{A prime for the selected slope}\label{sec:hit}
+
+Relabel the transverse coordinates in their original order, from $0$ to $m-1$.
+Put $\lambda_i^*=i/m$ and write $\|s\|$ for the distance to the nearest integer.
+
+\begin{lemma}\label{lem:hit}
+Some prime $q\in I=(10X/11,X]$ satisfies $\max_i\|q\lambda_i-\lambda_i^*\|<\eta$,
+$D/(k+1)<q\le L_*-D$ and $q>k+1$.
+\end{lemma}
+
+\begin{proof}
+If $v\in\Z^m$ and $0<|v|_1\le J/(3t)$, rounding $-\lambda\cdot v$
+to the nearest axial integer gives a nonzero vector of norm at most
+$h\|\lambda\cdot v\|+(t+u)|v|_1$. Thus $\|\lambda\cdot v\|\ge J/(2h)$
+by $u<t/2$ and minimality of $J$.
+Write $T=\log X$. From $X\asymp_e n$, \eqref{eq:contact-height},
+$\ell\le x$ and the upper bound on $\log H$, we have $T\asymp_e x$ and
+$h/X\ll_e x$. Hence $J>\exp(\kappa x)$ and $t\le x$ give
+$mKT^{20}<J/(3t)$ and $T^{20}/X<J/(2h)$.
+
+For $0<|b|_\infty\le K$, $b\in\Z^m$, apply Dirichlet approximation to
+$\beta=b\cdot\lambda$ with $Q=\lfloor X/T^{20}\rfloor$. It gives
+coprime $A,r$, $1\le r\le Q$, with $|r\beta-A|\le1/(Q+1)<T^{20}/X$.
+A denominator $r\le T^{20}$ contradicts the lower bound at $v=rb$.
+Thus $T^{20}<r\le X/T^{20}$ and $|\beta-A/r|<r^{-2}$.
+
+Write $\Lambda_{\rm vM}$ for the von Mangoldt function and $\chi$ for the
+periodic indicator of $(-1/4,1/4]$. At $N=\lfloor X\rfloor,\lfloor10X/11\rfloor$,
+\cite[Theorem~3, (15)]{SteudingTechnau} with exponent $1/100$ gives uniformly in $s$
+\[
+ \left|\sum_{j\le N}\Lambda_{\rm vM}(j)(\chi(j\beta-s)-1/2)\right|
+ \ll T^8(X/\sqrt r+X^{3/4}+\sqrt{Xr}+X^{33/40}),
+\]
+since $(4Nr)^{3/400}N^{81/100}\ll X^{33/40}$.
+The bounds on $r$ give $O(X/T^2)$. Integrating against
+$\exp(2\pi i s)$ over one period replaces the centered arc by
+$\exp(2\pi i j\beta)/\pi$. Subtraction bounds the exponential sum on $I$ by $O(X/T^2)$.
+
+Set $F(s)=\prod_i\eta^{-1}(1-\|s_i-\lambda_i^*\|/\eta)_+$.
+Each factor has mean one and Fourier coefficients of modulus
+$(\sin(\pi a\eta)/(\pi a\eta))^2$ for $a\ne0$. Their absolute sum is
+$1/\eta$ by evaluating the unshifted series at zero. The tail beyond $K$
+is at most $2/(\pi^2K\eta^2)$ by summing $(\pi a\eta)^{-2}$.
+Thus the product has Fourier mass $\eta^{-m}$, with at most
+$2m/(\pi^2K\eta^{m+1})\le1/4$ outside the cube. Put
+$S_I=\sum_{j\in I}\Lambda_{\rm vM}(j)>X/12$ by Fact~\ref{fact:primes}.
+Higher prime powers have at most $T/\log 2$ exponents and $\sqrt X$ bases per exponent, so
+\[
+ \sum_{q\in I,\ q\ {\rm prime}}(\log q)F(q\lambda)
+ \ge \tfrac34 S_I-O\bigl(\eta^{-m}(X/T^2+\sqrt X\,T^2)\bigr)>0 .
+\]
+Any contributing $q$ has the required distances. Also $10X/11\ge D/(k+1)$
+and $X=L_*-D\asymp_e D\to\infty$, giving the remaining inequalities.
+\end{proof}

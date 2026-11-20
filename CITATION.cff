@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A subexponential upper bound for log c in the abc conjecture"
+authors:
+  - family-names: Zhang
+    given-names: Ruiyi
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0003-3110-8524"
+license: CC-BY-4.0
+repository-code: "https://github.com/ryzfsu/abc-log-bound-subexponential"
+preferred-citation:
+  type: article
+  title: "A subexponential upper bound for log c in the abc conjecture"
+  authors:
+    - family-names: Zhang
+      given-names: Ruiyi
+      affiliation: Independent Researcher
+      orcid: "https://orcid.org/0009-0003-3110-8524"
+  year: 2026

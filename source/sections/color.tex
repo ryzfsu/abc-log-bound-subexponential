@@ -1,0 +1,37 @@
+\section{Interpolation on a simplex}\label{sec:interpolation}
+
+Give each point \(y\in T_m(U)\) the color
+\(\sigma(y)=\sum_{i=0}^{m-1}i y_i\bmod m\), so
+\(\lambda^*\cdot y\equiv \sigma(y)/m\pmod 1\).
+
+\begin{lemma}\label{lem:color}
+Let \(q\) be prime and \(0\le j<\min(m,q)\).
+Choose any \(j+1\) consecutive colors modulo \(m\).
+Their points in \(T_m(j+1)\) determine every polynomial over \(\F_q\)
+of total degree at most \(j\).
+\end{lemma}
+
+\begin{proof}
+Read colors modulo \(m\). Suppose \(P\) vanishes on the colors
+\(a,\ldots,a+j\), with \(0\le a<m\). We induct on
+\(j\). For \(j=0\), evaluation at the unit vector \(e_a\) detects
+the constant. For \(j\ge1\) and \(0\le i<m-1\), consider
+\[
+  P(y+e_{i+1})-P(y+e_i).
+\]
+This difference has degree at most \(j-1\). It vanishes on the \(j\)
+colors \(a-i,\ldots,a-i+j-1\) in \(T_m(j)\). Both translates then have
+colors in the original interval. By induction the difference
+is identically zero. Thus \(P\) is invariant under translation by each
+\(e_{i+1}-e_i\), and hence by every \(e_i-e_0\).
+
+Use coordinates \(s=\sum_i y_i,y_1,\ldots,y_{m-1}\).
+Translation by \(e_i-e_0\) now increments only \(y_i\).
+Suppose the leading term in \(y_i\) is \(A y_i^b\), with \(b>0\).
+Its forward difference has leading term \(bA y_i^{b-1}\).
+Since \(b\le j<q\), this contradicts invariance.
+Consequently \(P=f(s)\). For \(1\le j'\le j+1\) the point
+\((j'-1)e_0+e_a\) has color \(a\) and coordinate sum \(j'\).
+These \(j+1\) distinct elements of \(\F_q\) are roots of \(f\),
+so \(f=0\).
+\end{proof}

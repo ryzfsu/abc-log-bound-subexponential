@@ -1,0 +1,234 @@
+\section{A prime of large contact}\label{sec:contact}
+
+Put $3x=\log R$, order $a\le b$, and suppose $H\ge\exp(3ex)$ with $x$ sufficiently large.
+Use the least-radical side $S$ and signed ratio $z$ of \cite[Section~2]{Z29}.
+The three side radicals have product $R$, so $\rad(S)\le R^{1/3}=\exp x$.
+Its rational logarithmic height is $H_z=h(z)\in[H-\log2,H]$, and
+$v_p(z-1)=v_p(S)$ for $p\mid S$.
+Apply \eqref{eq:local} with $\vartheta=3g$ as in
+\cite[Propositions~3.1 and~4.1]{Z29}. At infinity $b/c$ gives
+$\log(c/a)\le EH$, where $E=\exp(-3(e-g)x)$.
+At $p\mid S$ with $p\le HR^{-2g}$, the ratio $z$ gives
+$v_p(S)\log p\le H\exp(-3gx)$. There are at most $x/\log2$ such primes.
+Since $\log S\ge(1-E)H$, the remaining primes have total mass
+$\sum\rho_p>0.9$, where $\rho_p=v_p(S)\log p/H$.
+To adapt \cite[Proposition~5.1]{Z29}, put $\omega_p=\log p/(3x)$.
+Each $\omega_p>e-2g$ and $\sum\omega_p\le1/3$. A maximizer of
+$\rho_p/\omega_p$ satisfies
+\begin{equation}\label{eq:contact-prime}
+ \rho_p>2.7(e-2g)>2e,\qquad 2.94ex<\ell=\log p\le x .
+\end{equation}
+
+In particular $p>HR^{-2g}\ge\exp(3(e-2g)x)>2$ for large $x$.
+On the support $\mathcal S$ of $z$, let $\Lambda$ be the kernel of the residue
+map $\beta(v)=\prod_i i^{v_i}$ into $C_p=\F_p^\times/\{\pm1\}$.
+Its injective character $\gamma(v)$ is the signed product congruent to $1\bmod p$
+\cite[Section~6]{Z29}. Use the same maps on adjoining primes away from $p$.
+The height norm $N$ is the larger of the positive and negative exponent sums
+weighted by $\log i$ \cite[Lemma~7.2, (7.4)]{Z29}.
+Since $z\equiv1\bmod p$, its vector belongs to $\Lambda$ and has character $z$.
+Write it as $\nu_pv_0$ with $\nu_p>0$ and $v_0$ primitive in $\Lambda$.
+The scalar $h=N(v_0)=H_z/\nu_p$ is the height of this primitive vector.
+The primitive-line argument of \cite[proof of Proposition~6.1]{Z29} gives
+$N(v)\ge\ell-\log2$ for $v\ne0$ and
+$v_p(S)\ell\le H/\nu_p+\log(2\nu_p)$.
+Hence $\nu_p\le H/(\ell-\log2)\le H$.
+By \eqref{eq:contact-prime} and $\log(2H)<eH$, we have $\nu_p\le1/e<p$.
+Lifting at $p$ yields $n=v_p(\gamma(v_0)-1)=v_p(S)$ and
+\begin{equation}\label{eq:contact-height}
+ h\ge(e/2)\exp(3ex),\qquad
+ 2e<\delta=n\ell/h\le1+(\log2)/h .
+\end{equation}
+The numerator of $\gamma(v_0)-1$ gives the upper bound. At infinity,
+\[
+ |\log|\gamma(v_0)||/h\le\log(c/a)/H_z\le2E .
+\]
+
+\section{Auxiliary primes and the first minimum}\label{sec:aux}
+
+Choose $i_*$ maximizing $M_*=|(v_0)_{i_*}|$.
+The weighted absolute length of $v_0$ satisfies
+$\sum_i|(v_0)_i|\log i\ge2(1-E)h$, so $M_*\ge h/(2x)$.
+Project along $v_0$ onto $y_{i_*}=0$ by $\pi$.
+Put $\|y\|_\perp=\sum_{i\ne i_*}|y_i|\log i$ and $u=x/\log x$.
+
+\begin{lemma}\label{lem:separation}
+Every nonzero point of $\pi\Lambda$ has transverse norm at least $2u$.
+\end{lemma}
+\begin{proof}
+Suppose $0<\|\pi v\|_\perp<2u$ for $v\in\Lambda$.
+Normalize area so that $\Z v_0+\Z v$ has covolume one, and let $A$ be the
+area of the unit $N$-ball in its span. Take a basis $w_1,w_2$ attaining its successive minima
+$L_i$ as in \cite[proof of Proposition~6.1]{Z29}, and write $v_0=\sum c_iw_i$.
+The diamonds on $v_0/h$ and either $\pi v/N(\pi v)$ or $w_{3-i}/L_{3-i}$
+lie in the ball by symmetry and convexity. Their areas and Minkowski's bound give
+\[
+ \max\left\{\frac{2}{hN(\pi v)},\frac{2|c_i|}{hL_{3-i}}\right\}
+ \le A\le\frac4{L_1L_2},\qquad L_1L_2<4hu,\quad |c_i|L_i\le2h .
+\]
+Both $L_i\ge\ell-\log2$. A zero $c_i$ would give $L_{3-i}=h$ by primitivity
+and hence $L_i<4u<\ell-\log2$.
+Apply \eqref{eq:bl} to the two independent basis units, inverted as needed.
+Here $T_i\le2L_i$, $b'\le4h/(L_1L_2)$ and $\log h\le x\ll_e\ell$.
+Thus $n\ell\ll_e L_1L_2/\ell\ll_e h/\log x$, contradicting \eqref{eq:contact-height}.
+\end{proof}
+
+Set $M=\exp(e_0x)\max(\sqrt p,p/h)$, $t=\log M$ and $\tau=t/\ell$.
+Since $\log h\ge3ex-\log(2/e)$ and $2.94ex<\ell\le x$, we get
+\begin{equation}\label{eq:tau-red}
+ \tau\le\max\{\tfrac12+e/29.4,\ 1-3e+e_0+\log(2/e)/\ell\}<1-2.8e .
+\end{equation}
+In particular $e_0x\le t\le x$ and $M<p/2$.
+Fact~\ref{fact:primes} leaves $\gg M/t$ primes in $(M/2,M]$ after removing divisors of $2R$.
+They are prime to $p$. Put $G=\beta(\Z^{\mathcal S})$, $s=|\mathcal S|-1\ge1$
+(the complementary sides are coprime and exceed one). Take one torus
+$\R^s/\pi\Lambda$ per coset of $G$ in $C_p$, as in
+\cite[proof of Lemma~6.2, overlap count]{Z29}.
+Fix a representative per coset; for each $q$ choose $a_q\in\Z^{\mathcal S}$
+so $q\beta(a_q)$ equals its coset representative, and mark $\pi a_q$ in that torus.
+The covolume is $|G|/M_*$ by expanding a lattice basis starting with $v_0$
+along coordinate $i_*$ after projection of the other columns. Thus the total
+volume $\mu$ and the volume $W_0$ of an embedded ball of radius $u/2$ satisfy
+\[
+ \mu=\frac{p-1}{2M_*}\le\frac{xp}{h},\qquad
+ W_0=\frac{u^s}{s!\prod_{i\ne i_*}\log i}\ge(u/(3x))^s=\exp(-o(x)).
+\]
+Here Lemma~\ref{lem:separation} gives the embedding, and the volume bound uses
+$\sum_i\log i\le3x$, $s=O(x/\log x)$ as in \cite[proof of Lemma~7.2, transverse volume]{Z29}.
+Averaging gives one ball containing $n_c\gg MW_0/(t\mu)\ge\exp(e_0x-o(x))$ primes.
+Lift the marked points in this ball to a single ball in $\R^s$.
+Their pairwise differences are $\pi o(q,q')$ for choices
+\[
+ o(q,q')\in a_q-a_{q'}+\Lambda,\qquad
+ \|\pi o(q,q')\|_\perp<u,\qquad \beta(o(q,q'))q/q'=1\quad\text{in } C_p .
+\]
+
+\begin{proposition}\label{prop:minimum}
+Some distinct $q_0,\ldots,q_m$ in this ball give first minimum
+$J>\exp(\kappa x)$ for the lattice $\Gamma_d$ generated by $v_0$ and
+$u_j=o(q_j,q_0)+\mathbf e_{q_j}-\mathbf e_{q_0}$, $1\le j\le m$.
+\end{proposition}
+\begin{proof}
+Put $Y=\exp(\kappa x)<h$. In a nonzero vector $a'v_0+\sum b_j u_j$
+of norm at most $Y$, the $d$ fresh coefficients sum to zero.
+Their absolute values are at most $Y$. At least one is nonzero.
+Fix them all, and let $i\ge1$ be the last nonzero index.
+Fix all primes except $q_i$, the old $i_*$-coordinate, and $a'\bmod |b_i|$.
+
+For two completions, the difference of the old parts divided by $b_i$
+is integral and vanishes at $i_*$. Its transverse norm is $<2u$
+by cancellation of the fixed lifts. The divisor count in
+\cite[proof of Lemma~6.2, small-denominator count]{Z29}
+allows at most $(1+2u)\exp(2u)$ differences from a fixed completion.
+Relative to a fixed completion $\bar q_i$, the divided difference $w'$ equals
+$o(q_i,q_0)-o(\bar q_i,q_0)$ plus an integral multiple of $v_0$.
+Thus $w'+\mathbf e_{q_i}-\mathbf e_{\bar q_i}$ has trivial signed residue.
+Each $w'$ fixes the signed class of $q_i$, with at most one prime in $(M/2,M]$ since $M<p/2$.
+The zero sum allows $O_e(Y^{d-1})$ coefficient tuples.
+The old coordinate and axial residue each have $O(Y)$ choices.
+Among $(1-o(1))n_c^d$ distinct tuples the bad proportion is therefore
+$O_e(Y^{d+1}(1+2u)\exp(2u)/n_c)\le\exp(-2\kappa x+o(x))$,
+since $(d+3)\kappa=e_0$.
+\end{proof}
+
+\section{A box and a vanishing polynomial}\label{sec:box}
+
+Fix the tuple of Proposition~\ref{prop:minimum}. Reduce its generators modulo $v_0$:
+$u_j=\lambda_jv_0+\pi_j+\mathbf e_{q_j}-\mathbf e_{q_0}$,
+where $|\lambda_j|\le1/2$ and $\|\pi_j\|_\perp<u$.
+For $P=a'v_0+\sum y_j u_j$, put $Z_0=h(a'+\lambda\cdot y)$.
+Set $a_1=(1-e/5)n\ell/[d(1+1/k)]$ and $2a_0=da_1/k$.
+Define $\mathcal V$ by $|Z_0|\le a_0$, $ty_j\ge-a_1$ and $t\sum y_j\le a_1$.
+Put $b_0=\lfloor a_1/t\rfloor$, $L=db_0$, $\theta=-b_0\sum\lambda_j$ and $W=2a_0/h$.
+Write $T_m(U)=\{z'\in\Z_{\ge0}^m:|z'|_1\le U\}$.
+Then $z'=y+b_0\mathbf1$ runs through
+\[
+ \mathcal B(L),\qquad
+ \mathcal B(U)=\{z'\in T_m(U):\|\theta+\lambda\cdot z'\|_{\R/\Z}\le W/2\}.
+\]
+By \eqref{eq:contact-height}, $W=(1-e/5)\delta/(k+1)\in[w,1)$.
+The circle condition gives an integer $a'$, unique since $W<1$.
+
+Put $D=\lceil(1+c_0)n\rceil-1$, $X=\lceil1.1D/(k+1)\rceil$ and $L_*=D+X$.
+Then $n\le D<(1+c_0)n$ and \eqref{eq:tau-red} gives
+\begin{equation}\label{eq:box-margin}
+ L/D\ge\frac{1-e/5}{(1+1/k)(1+c_0)\tau}-d/D>1+1.9e .
+\end{equation}
+Here $1/k\le e/2$ and $d/D=o(1)$ by $n\ge e^2\exp(3ex)/x$.
+Hence $L_*\le L$.
+
+Choose a shortest vector $v_1$. For $Q=\lfloor(h/t)^{1/d}\rfloor$, two phases
+$\lambda\cdot y$, $y\in\{0,\ldots,Q\}^m$, have circle distance at most $(Q+1)^{-m}$.
+Their difference with the nearest axial correction is nonzero.
+Each transverse generator costs at most $t+u\le2t$. Thus
+\begin{equation}\label{eq:short-upper}
+ J\le h(Q+1)^{-m}+2mtQ\le(1+2m)h\sqrt{t/h}.
+\end{equation}
+
+\begin{proposition}\label{prop:vanish}
+A nonzero rational polynomial of total degree at most $D$ vanishes on $\mathcal B(L)$.
+\end{proposition}
+\begin{proof}
+Index columns by the coordinates $(a',y)$ of points in $\mathcal V\cup(\mathcal V+v_1)$
+in the basis $v_0,u_1,\ldots,u_m$.
+The first $N_0=\binom{n+m-1}{m}$ rows evaluate
+$P_\beta(y)=\prod_i\binom{y_i}{\beta_i}$ for $|\beta|<n$.
+The next $N_1=\lfloor c_0^mN_0\rfloor$ rows evaluate $\gamma(P)P_\beta(y)$
+for the first $N_1$ indices in increasing degree.
+For $V_1=\lceil c_0n\rceil$, the second block lies in $|\beta|<V_1$,
+since $V_1+i\ge c_0(n+i)$ for $0\le i<m$.
+Its mean degree is at most the full simplex mean $m(V_1-1)/d<mc_0n/d$.
+Write $N_*=N_0+N_1$.
+
+Translate the columns to nonnegative coordinates. By
+\cite[proof of Proposition~7.1, valuation argument]{Z29},
+binomial translation is unitriangular on both downward-closed blocks.
+The translated character acquires a common $p$-unit factor.
+After removing it, expand $\gamma(v_0)^{a'}\prod_i\gamma(u_i)^{y_i}P_\beta(y)$
+in the basis $\binom{a'}{\mu}P_\nu(y)$ with coefficients $c_{\mu,\nu}$. Then
+\[
+ v_p(c_{\mu,\nu})\ge n\mu+\sum_i(\nu_i-\beta_i)_+ .
+\]
+Indeed, the axial unit has depth $n$. At each transverse unit the term of
+binomial index $j$ has valuation at least $j$, and multiplying by
+$\binom{y_i}{\beta_i}$ gives integral binomial coefficients supported at
+$\nu_i\le j+\beta_i$. Only finitely many indices contribute on the columns.
+Subtract terms with $\mu=0$, $|\nu|<n$ using the first block.
+Each remaining entry has valuation at least $n-|\beta|$.
+Summing over rows, any nonzero minor $\Delta$ of order $N_*$ satisfies
+\begin{equation}\label{eq:det-lower}
+ v_p(\Delta)\ell>N_1n\ell(1-mc_0/d).
+\end{equation}
+
+For the global estimate translate only the polynomial coordinates.
+In $\mathcal V$, $|y_i|\le ma_1/t=O_e(n)$.
+Translation by $v_1$ changes each $y_i$ by at most $J/\log(M/2)=O_e(n)$
+by \eqref{eq:short-upper} and \eqref{eq:contact-height}.
+Shifting each coordinate by its minimum therefore bounds the binomial entries by $\exp(O_e(n))$.
+Every determinant term contains $N_1$ character factors. At each place take
+the maximum over the union of both boxes.
+The product formula and integrality of the binomial entries at finite places give
+\[
+ v_p(\Delta)\ell
+ \le N_1\sum_{v\ne p}\max_{P\in\mathcal V\cup(\mathcal V+v_1)}
+      \log|\gamma(P)|_v+O_e(N_*(n+\log N_*)).
+\]
+On $\mathcal V$ the old finite places contribute $\le2a_0+O_e(a_1u/t)$
+since $v_0$ has weighted absolute length $\le2h$.
+Each fresh place contributes $\le a_1$ by the defining inequalities.
+Infinity contributes $\le2a_0E+O_e(a_1(u+\log2)/t)$ since $1/2<q_j/q_0<2$.
+The translate adds at most $N(v_1)=J$ to the sum of maxima.
+Now $2a_0+da_1=(1-e/5)n\ell$, $N_*/N_1=O_e(1)$ and $\log N_*=O_e(\log n)$.
+Dividing by $N_1n\ell$ gives the upper bound
+$1-e/5+O_e(E+(u+1)/t+\sqrt{t/h}+1/\ell)=1-e/5+o(1)$.
+This contradicts \eqref{eq:det-lower}.
+
+All minors of order $N_*$ vanish. With fewer than $N_*$ columns the rank is
+already smaller than $N_*$. Thus a row dependence gives $P_0(y)+\gamma(P)P_1(y)=0$ on both boxes,
+with degrees $\le n-1,V_1-1$. If either polynomial is zero, the other suffices.
+Otherwise let $s$ be the displacement of $v_1$ in the $y$ coordinates.
+Translate-elimination \cite[proof of Proposition~7.1, rank argument]{Z29}
+gives $P_0(y+s)P_1(y)-\gamma(v_1)P_0(y)P_1(y+s)=0$ on $\mathcal V$.
+Its top form is the product of the two top forms times $1-\gamma(v_1)\ne0$.
+Its degree is at most $n+V_1-2\le D$. Translate to $z'$.
+\end{proof}

@@ -1,0 +1,38 @@
+\section{Introduction}
+
+Write \(R=\rad(abc)=\prod_{p\mid abc}p\) and \(H=\log c\).
+The \(abc\) conjecture predicts \(H\le(1+\varepsilon)\log R+O_\varepsilon(1)\)
+for every coprime positive solution of \(a+b=c\). It remains open.
+Stewart and Yu obtained \(H\ll R^{1/3}(\log R)^3\)
+\cite[Theorem~1]{SY2001}. Pasten and Sep\'ulveda-Manzo obtained
+subexponential estimates under size conditions on the smaller summand
+\cite[Theorems~1.2 and~1.3]{PastenSep}. Zhang gives
+\(H\ll R^{1/3}\exp(-\log R/(3000\log\log R))\) for all sufficiently large
+\(R\) \cite[Theorem~1]{ZhangThird} and subsequently obtains
+\(H\ll_\varepsilon R^{2/9+\varepsilon}\) \cite[Theorem~1.1]{Z29}.
+
+\begin{theorem}\label{thm:main}
+Let \(\varepsilon>0\). There is a constant \(C_\varepsilon>0\) such that
+\[
+       \log c\le C_\varepsilon\rad(abc)^\varepsilon
+\]
+for all coprime positive integers \(a,b\) and \(c=a+b\).
+\end{theorem}
+
+Fix \(e=\min(\varepsilon,1/10)\) and suppose \(H\ge R^e\).
+For large \(R\), the side of least radical contains a prime power of logarithm \(>2eH\).
+The ratio of the other sides is then close to a sign at that prime.
+Adjoining auxiliary primes gives a lattice of principal units with large first minimum.
+Two determinant estimates force a nonzero polynomial to vanish on a slice of an integer simplex.
+
+Write \(\lambda\) for the slope of the slice.
+The first minimum excludes small denominators for its Fourier frequencies.
+Steuding and Technau's prime estimate locates a prime \(q\) with
+\(q\lambda\) close to \((0,1/m,\ldots,(m-1)/m)\)
+\cite[Theorem~3]{SteudingTechnau}.
+In each residue class modulo \(q\), the slice thus contains consecutive colors of a smaller simplex.
+Finite differences give interpolation on those colors.
+Lucas's congruence lifts interpolation to the full slice, contradicting the vanishing polynomial.
+
+The use of AI tools is described at the end of the paper.
+

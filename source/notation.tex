@@ -1,0 +1,22 @@
+\DeclareMathOperator{\rad}{rad}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\fixedparameters}{%
+\begin{table}[ht]
+\caption{Parameters fixed by \(e=\min(\eps,1/10)\).}\label{tab:parameters}
+\centering
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{ll}
+\hline
+Arithmetic scales & \(g=e/100,\quad e_0=e^2/10,\quad c_0=e/10\)\\
+Degree and width & \(k=\lceil2/e\rceil,\quad w=e/(k+1)\)\\
+Dimensions & \(m=\lceil2(k+1)/w\rceil,\quad d=m+1\)\\
+Fourier cutoff & \(\eta=w/[4(k+1)],\quad K=\lceil8m/(\pi^2\eta^{m+1})\rceil\)\\
+Degree scale & \(\kappa=e_0/(d+3)\)\\
+\hline
+\end{tabular}
+\end{table}}

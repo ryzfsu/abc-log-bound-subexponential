@@ -1,0 +1,25 @@
+\begin{lemma}\label{lem:block}
+Fix the prime $q$ of Lemma~\ref{lem:hit}. For every
+$r\in\{0,\ldots,q-1\}^m$ with $|r|_1\le D$, put
+$j=\lfloor(D-|r|_1)/q\rfloor$. Evaluation on
+$\{y\in\Z_{\ge0}^m:qy+r\in\mathcal B(L_*)\}$ is injective
+on the polynomials of total degree at most $j$ over $\F_q$.
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:hit}, $q>D/(k+1)$ and $q>k+1$, so $0\le j\le k<q$.
+Choose a real lift of $\theta_r=\theta+\lambda\cdot r$. Put
+$a=\lceil-m(\theta_r+w/4)\rceil$. For $0\le i\le j$ we have
+\[
+ -w/4\le\theta_r+(a+i)/m<-w/4+(j+1)/m\le w/4 .
+\]
+Here $(j+1)/m\le w/2$ by the choice of $m$.
+Consider $y\in T_m(j+1)$ of color $a+i\bmod m$ for some
+$0\le i\le j$. Then $\|\theta_r+\lambda^*\cdot y\|\le w/4$.
+Uniformly in $r$, we have
+$\|(q\lambda-\lambda^*)\cdot y\|\le |y|_1\eta\le(k+1)\eta=w/4$. Thus
+$\|\theta+\lambda\cdot(qy+r)\|\le w/2\le W/2$.
+Also $|qy+r|_1\le q(j+1)+|r|_1\le D+q\le L_*$. The block contains
+all points of these colors in $T_m(j+1)$. Since $j\le k<m$
+and $j<q$, Lemma~\ref{lem:color} gives injectivity.
+\end{proof}

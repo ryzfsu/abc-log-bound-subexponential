@@ -1,0 +1,72 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{fact}{Fact}
+\renewcommand{\thefact}{F\arabic{fact}}
+\numberwithin{equation}{section}
+\input{notation}
+\title[A subexponential upper bound for log c]{A subexponential upper bound for log c in the abc conjecture}
+\author{Ruiyi Zhang}
+\address{Independent Researcher, Columbia, Maryland, USA}
+\email{ryzfsu@gmail.com}
+\date{November 20, 2026}
+\subjclass[2020]{Primary 11D75; Secondary 11J86, 11L20}
+\keywords{abc conjecture, radical, interpolation determinant, exponential sum over primes}
+\hypersetup{
+  pdftitle={A subexponential upper bound for log c in the abc conjecture},
+  pdfauthor={Ruiyi Zhang},
+  pdfsubject={2020 Mathematics Subject Classification: Primary 11D75, Secondary 11J86 and 11L20},
+  pdfkeywords={abc conjecture, radical, interpolation determinant, exponential sum over primes}
+}
+\begin{document}
+\begin{abstract}
+Let \(a,b,c\) be positive integers with \(a+b=c\) and \(\gcd(a,b)=1\).
+We prove the bound
+\(\log c\le C_\varepsilon\rad(abc)^\varepsilon\) for every
+\(\varepsilon>0\). Under the contrary height assumption, a prime power
+dividing one side forces a nonzero polynomial to vanish on part of an
+integer simplex. A second prime splits that set into residue classes.
+Finite differences and Lucas's congruence show that its points determine
+every polynomial up to the required degree.
+\end{abstract}
+\maketitle
+\input{sections/introduction}
+\input{sections/inputs}
+\input{sections/reduction}
+\input{sections/hit}
+\input{sections/color}
+\input{sections/block-color}
+\input{sections/qbd}
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Fix \(e=\min(\varepsilon,1/10)\). Let \(x_e\) exceed all preceding thresholds.
+Suppose \(x\ge x_e\) and \(H\ge R^e\).
+Proposition~\ref{prop:vanish} supplies a nonzero rational polynomial of
+degree at most \(D\) vanishing on \(\mathcal B(L)\).
+By \eqref{eq:box-margin}, \(L_*\le L\), so this polynomial vanishes on
+\(\mathcal B(L_*)\). Proposition~\ref{prop:lucas} forces it to be zero.
+Thus \(H<R^e\) for \(x\ge x_e\). For \(x<x_e\),
+the cap in Section~\ref{sec:inputs} bounds \(H\) by a constant depending only on \(e\).
+Since \(1\le R^e\le R^\varepsilon\), these bounds give the theorem.
+\end{proof}
+\section*{Use of AI tools}
+The author devised the method of proof. Codex (OpenAI, GPT-6 Astra) and
+Antigravity (Google, Gemini 4 Neon) ran blind reviews of the manuscript,
+and Codex assisted with the Lean formalization. Claude Code (Anthropic,
+Claude Fable 5) checked the proofs and the references. The author checked
+every step of the proof and every reference, and takes full responsibility
+for the content of the paper.
+
+\section*{Statements and declarations}
+{\raggedright
+\textbf{Competing interests.} The author has no competing interests.\par
+\textbf{Funding.} No funding was received for this work.\par
+\textbf{Data availability.} A Lean~4 formalization of Theorem~\ref{thm:main}
+is available at \url{https://github.com/ryzfsu/abc-log-bound-subexponential}
+under the declaration \texttt{AbcSubexp.subexp}.\par}
+\input{sections/references}
+\end{document}
