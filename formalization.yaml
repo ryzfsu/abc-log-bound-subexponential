@@ -21,11 +21,11 @@ sources:
   - title: "A subexponential upper bound for log c in the abc conjecture"
     authors: ["Ruiyi Zhang"]
     type: "paper"
-    id: "https://github.com/ryzfsu/abc-log-bound-subexponential"
+    id: "https://doi.org/10.5281/zenodo.24407806"
     license: "CC-BY-4.0"
-    location: "https://github.com/ryzfsu/abc-log-bound-subexponential/blob/main/main.pdf"
+    location: "https://zenodo.org/records/24407807"
     relationship: "formalizes"
-    note: "Theorem 1.1 of the paper."
+    note: "The paper is published on Zenodo; the main result is Theorem 1.1."
     author_endorsement: "participated"
 
 related_formalizations:
